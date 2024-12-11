@@ -1,0 +1,35 @@
+/*----------- General ---------*/
+body{
+    margin: 0; /*Margen*/
+    font-family: "Montserrat", serif; /*Fuente de letra*/
+}
+
+a{
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/*----------- Header ----------*/
+.cabecera{
+    background-color: #010101; /*Color de fondo*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cabecera__logo{
+    width: 30%;
+}
+
+
+.cabecera__nav__lista{
+    display: flex;
+}
+
+
+.cabecera__nav__lista__enlace{
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
