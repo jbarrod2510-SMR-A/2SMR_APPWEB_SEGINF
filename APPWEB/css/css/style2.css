@@ -1,35 +1,173 @@
 /*----------- General ---------*/
+
+
 body{
     margin: 0; /*Margen*/
     font-family: "Montserrat", serif; /*Fuente de letra*/
+    background-color: aliceblue;
 }
 
 a{
     text-decoration: none; /* Quita el subrayado */
 }
 
+
 /*----------- Header ----------*/
+
+
 .cabecera{
     background-color: #010101; /*Color de fondo*/
     display: flex;
     width: 100%;
+    justify-content: space-between; /*Poner la cabecera cada uno en una esquina*/
+    align-items: center; /*Ponerlo en el centro*/
+}
+
+
+.cabecera__logo{
+    width: 30%; /*Tamaño*/
+}
+
+
+.cabecera__nav__lista{
+    display: flex; /*Posicionar los elementos*/
+}
+
+
+.cabecera__nav__lista__enlace{
+    margin-right: 2rem; /*Margen a la derecha*/
+    color: aliceblue;
+    font-size: 1.5rem; /*Tamaño de letra*/
+}
+
+.cabecera__nav__lista__enlace:hover{ /*Botones de cabecera de colores cuando estas encima de ellos*/
+    color: yellowgreen;
+}
+
+
+
+/*------------ Sección principal (main) ---------*/
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+
+.principal__titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+}
+
+
+.principal__viajes{
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: space-evenly
+}
+
+
+.principal__viajes__art{
+    width: 30%;
+}
+
+
+.principal__viajes__art__img{
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+
+.principal__viajes__art_contenedor{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.cabecera__logo{
-    width: 30%;
+.principal__viajes__art__contenedor__texto{
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 70%;
 }
 
 
-.cabecera__nav__lista{
-    display: flex;
-}
-
-
-.cabecera__nav__lista__enlace{
-    margin-right: 2rem;
+.principal__viajes__art__contenedor__enlace{
+    background-color: black;
     color: aliceblue;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+    margin-left: 0.75rem;
+    text-align: center;
+}
+
+
+.principal__viajes__art__contenedor__enlace:hover{
+    background-color: red;
+}
+
+
+.principal__contacto{
+    width: 100%;
+    background-color: black;
+}
+
+.principal__contacto__form__contenedor{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin: 0;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.principal__contacto__form__contenedor__titulo{
+    text-align: center;
     font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    color: aliceblue
+}
+
+
+.principal__contacto__form__contenedor__div{
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+
+.principal__contacto__form__contenedor__div__email{
+    margin-bottom: 0.5rem;
+    padding: 0.35rem;
+    border: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.principal__contacto__form__contenedor__div__boton{
+    padding: 0.35rem;
+    border: 0;
+    text-align: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border-radius: 0.35rem;
+    background-color: gray;
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+.principal__contacto__form__contenedor__div__boton:hover{
+    background-color: yellowgreen;
+    color: #010101;
 }
