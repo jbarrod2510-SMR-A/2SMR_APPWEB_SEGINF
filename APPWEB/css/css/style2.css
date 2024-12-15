@@ -171,3 +171,29 @@ a{
     background-color: yellowgreen;
     color: #010101;
 }
+
+.principal__footer {
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem; /* Margen arriba y abajo */
+    background-color: gray; /* Color de fondo opcional */
+    padding: 1.5rem; /* Espaciado interno arriba y abajo */
+}
+
+.principal__footer__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaciado entre los enlaces */
+}
+
+.principal__footer__enlace {
+    text-decoration: none;
+    color: #333;
+}
+
+.principal__footer__enlace:hover {
+    color: #007BFF; /* Cambio de color al pasar el ratón */
+}

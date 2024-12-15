@@ -1,0 +1,16 @@
+.cabecera {
+    display: flex;
+    align-items: center;
+    width: 20%; 
+}
+
+.cabecera__figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cabecera__logo {
+    max-width: 100%;
+    height: 0.5rem;
+}
