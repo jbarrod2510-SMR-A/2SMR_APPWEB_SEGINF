@@ -1,32 +1,34 @@
-// Objetivo: a partir de los datos introducidos por el usuario, crea un generador de números primos
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function(){
-    // Declaración de funciones
+
+    /*Declaracion de funciones*/
     function esPrimo(num){
-        for (let i =2; i < num; i++){
+
+        for(let i = 2; i < num; i++){
             if(num % i == 0){
-                return false; 
+                return false;
             }
         }
 
         return true;
     }
-    // Datos de entrada del usuario    
-    const num1 = parseInt(prompt("Introduce un número entero"));
-    const num2 = parseInt(prompt("Introduce el otro número entero"));
-    
-    // Parte principal
+
+
+    /* Parte principal (main) -- llamada a la funciones*/
+    const num_1 = parseInt(prompt("Introduce un numero entero"));
+    const num_2 = parseInt(prompt("Introduce otro numero entero"));
+    let lst_num = [];
     let max, min;
-    let lst_num = []
-    if (num1>= num2){
-        max=num1;
-        min=num2;
+
+    if(num_1 >= num_2){
+        max = num_1;
+        min = num_2;
     }else{
-        max=num2;
-        min=num1;
+        max = num_2;
+        min = num_1;
     }
 
-    for (let i = min; i <= max; i++){
+    for(let i = min; i <= max; i++){
         if(esPrimo(i)){
             lst_num.push(i);
         }
@@ -35,10 +37,3 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(lst_num);
 
 });
-
-
-
-
-
-// Mostramos información al usuario
-
