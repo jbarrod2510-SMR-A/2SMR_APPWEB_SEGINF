@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function(){
 
     /*Declaración de la función*/
@@ -18,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function(){
     
     /*Creación de array con datos de entrada del usuario*/
     for(let i = 0; i < num; i++){
-        let n = parseInt(prompt("Introduce un numero entero"));
+        const n = parseFloat(prompt("Introduce un numero"));
         lista.push(n);
     }
     
     /*Llamada a la función findLargestNumber*/
-    alert("El numero más gran del array " + lista.join(",") + " es " + findLargestNumber(lista));
+    alert("El numero más gran del array " + lista + " es " + findLargestNumber(lista));
     
 });
