@@ -1,31 +1,28 @@
-// Función para encontrar el número más grande en un array
-function findLargestNumber(numbers) {
-    let maxNumber = numbers[0]; // Inicializa el máximo con el primer elemento
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] > maxNumber) {
-            maxNumber = numbers[i]; // Actualiza el máximo si encuentra un número mayor
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    /*Declaración de la función*/
+    function findLargestNumber(array){
+        max = array[0];
+        for(let i = 0; i<array.length; i++){
+            if(max < array[i])
+                max = array[i];
         }
+        return max;
     }
-    return maxNumber;
-}
-
-// Solicita al usuario la cantidad de números
-const cantidad = parseInt(prompt("¿Cuántos números deseas ingresar?"), 10);
-
-if (isNaN(cantidad) || cantidad <= 0) {
-    alert("Por favor, ingresa un número entero positivo válido.");
-} else {
-    const numeros = [];
-    for (let i = 0; i < cantidad; i++) {
-        const numero = parseFloat(prompt(`Ingresa el número ${i + 1}:`));
-        if (!isNaN(numero)) {
-            numeros.push(numero);
-        } else {
-            alert("Por favor, ingresa un valor numérico válido.");
-            i--; // Reintenta la entrada para el número actual
-        }
+    
+    /*Datos de entrada y variables auxiliares*/
+    const num = parseInt(prompt("Introduce la cantidad de numeros que quieres introducir"));
+    let lista = [];
+    
+    /*Creación de array con datos de entrada del usuario*/
+    for(let i = 0; i < num; i++){
+        let n = parseInt(prompt("Introduce un numero entero"));
+        lista.push(n);
     }
-
-    const maximo = findLargestNumber(numeros);
-    alert(`El número más grande en la lista es: ${maximo}`);
-}
+    
+    /*Llamada a la función findLargestNumber*/
+    alert("El numero más gran del array " + lista.join(",") + " es " + findLargestNumber(lista));
+    
+});

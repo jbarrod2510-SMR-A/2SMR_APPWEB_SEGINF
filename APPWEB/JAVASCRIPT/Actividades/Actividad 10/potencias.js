@@ -1,10 +1,17 @@
-document.addEventListener("DOMContentLoaded")
-// Función para calcular la potencia
-function calculatePower(base, exponent) {
-    let pow = 1;
-    for(let i = 0; i < exponent; i++){
-        pow = pow * base;
+document.addEventListener("DOMContentLoaded", function(){
+
+    function calculatePower(bas, exp){
+
+        let pow = 1;
+        for(let i = 0; i < exp; i++){
+            pow = pow*bas;
+        }
+        return pow;
+
     }
-    return pow;
-}
-console.log(calculatePower(2,3));
+
+    console.log(calculatePower(2,3));
+
+
+
+});

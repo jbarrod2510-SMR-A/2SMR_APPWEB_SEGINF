@@ -1,18 +1,23 @@
-// Función para calcular el factorial de un número
-function calculateFactorial(number) {
-    let result = 1; // Inicializa en 1 porque el factorial de 0 y 1 es 1
-    for (let i = 1; i <= number; i++) {
-        result *= i; // Multiplica el resultado por el número actual
+document.addEventListener("DOMContentLoaded", function(){
+
+    /*Definicion de una funcion*/
+    function Factorial(num){
+
+        let fac_num = 1;
+        if(num > 0){
+            for(let i = 1; i <= num; i++){
+                fac_num = fac_num*i;
+            }
+            return fac_num;
+        }else{
+            return "El numero introducido no es positivo";
+        } 
+
     }
-    return result;
-}
 
-// Solicita al usuario ingresar un número
-const input = parseInt(prompt("Ingresa un número entero no negativo para calcular su factorial:"), 10);
+    /*Parte principal - (main) -- Llamamos a la funcion*/
+    const num_usr = parseInt(prompt("Introduce un numero positivo"));
+    alert(Factorial(num_usr));
 
-if (isNaN(input) || input < 0) {
-    alert("Por favor, ingresa un número entero no negativo válido.");
-} else {
-    const factorial = calculateFactorial(input);
-    alert(`El factorial de ${input} es ${factorial}.`);
-}
+
+})
