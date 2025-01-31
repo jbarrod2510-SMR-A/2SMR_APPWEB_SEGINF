@@ -189,7 +189,7 @@ btn_fon.addEventListener("click", function(){
 
 // Ejercicio 7
 btn_cls.addEventListener("click", function(){
-
+    
     const header = document.querySelector("header");
     header.classList.toggle("header--active");
     /*Modificando el estilo del boton al pulsar click*/
