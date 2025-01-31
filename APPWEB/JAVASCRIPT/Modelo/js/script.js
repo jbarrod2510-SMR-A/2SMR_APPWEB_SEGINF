@@ -83,12 +83,16 @@ function fuentesImg(){
     imgs.forEach(foto => {
         txt += foto.src + "<br>";
     })
+    if(!document.querySelector("div")){
+        const new_ele = document.createElement("div");
+        new_ele.innerHTML = txt;
+        new_ele.classList.add("texto");
+        padre = document.querySelector("main");
+        padre.appendChild(new_ele);
+    }else{
+        borrar();
+    }
 
-    const new_ele = document.createElement("div");
-    new_ele.innerHTML = txt;
-    new_ele.classList.add("texto");
-    padre = document.querySelector("main");
-    padre.appendChild(new_ele);
 
 }
 
@@ -176,5 +180,9 @@ imgs.forEach(imagen => {
 
 btn_fon.addEventListener("click", function(){
     fuentesImg();
+
+
+    /*Modificando el estilo del boton al pulsar click*/
+    this.classList.toggle("header__btn--click");
 });
 })
