@@ -103,6 +103,7 @@ const btn_blq = document.querySelector(".header__btn--create");
 const btn_rmv = document.querySelector(".header__btn--remove");
 const imgs = document.querySelectorAll(".main__sub__fig__img");
 const btn_fon = document.querySelector(".header__btn--font");
+const btn_cls = document.querySelector(".header__btn--cls")
 
 
 /* Ejercicio 1 y 2*/
@@ -185,4 +186,13 @@ btn_fon.addEventListener("click", function(){
     /*Modificando el estilo del boton al pulsar click*/
     this.classList.toggle("header__btn--click");
 });
+
+// Ejercicio 7
+btn_cls.addEventListener("click", function(){
+
+    const header = document.querySelector("header");
+    header.classList.toggle("header--active");
+    /*Modificando el estilo del boton al pulsar click*/
+    this.classList.toggle("header__btn--click");
+})
 })
