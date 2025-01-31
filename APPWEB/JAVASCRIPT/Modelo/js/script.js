@@ -104,7 +104,7 @@ const btn_rmv = document.querySelector(".header__btn--remove");
 const imgs = document.querySelectorAll(".main__sub__fig__img");
 const btn_fon = document.querySelector(".header__btn--font");
 const btn_cls = document.querySelector(".header__btn--cls")
-
+const btn_sub = document.querySelector(".header__btn--subt")
 
 /* Ejercicio 1 y 2*/
 btn_tit.addEventListener("click", function(){
@@ -189,9 +189,23 @@ btn_fon.addEventListener("click", function(){
 
 // Ejercicio 7
 btn_cls.addEventListener("click", function(){
-    
+
     const header = document.querySelector("header");
     header.classList.toggle("header--active");
+    /*Modificando el estilo del boton al pulsar click*/
+    this.classList.toggle("header__btn--click");
+})
+
+// Ejercicio 8
+btn_sub.addEventListener("click", function(){
+
+    const header = document.querySelector(".destacar");
+    if(!header){
+        creaDiv("div", "main", "main__title", "Pagina Modelo", "destacar");
+    }else{
+        borrar(".destacar");
+    }
+
     /*Modificando el estilo del boton al pulsar click*/
     this.classList.toggle("header__btn--click");
 })
