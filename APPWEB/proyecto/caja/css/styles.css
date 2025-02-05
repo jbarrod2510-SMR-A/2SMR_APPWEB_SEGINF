@@ -1,0 +1,14 @@
+.cuadrado {
+    width: 20rem;
+    height: 20rem;
+    background-color: blue;
+    margin-left: 50rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.ocultar {
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
