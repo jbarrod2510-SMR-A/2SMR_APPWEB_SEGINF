@@ -11,5 +11,6 @@ function toggleBox(){
 const box = document.querySelector(".cuadrado");
 const button = document.querySelector(".ocultar");
 
-
-button.addEventListener("click", toggleBox);
+button.addEventListener("click", function(){
+    toggleBox();
+});
