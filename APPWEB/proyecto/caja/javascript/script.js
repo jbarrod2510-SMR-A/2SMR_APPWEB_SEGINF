@@ -1,15 +1,15 @@
 function toggleBox(){
-    if(caja.style.display == "none"){
-        caja.style.display == "block";
-        boton.textContent = "Ocultar la caja";
+    if(box.style.display == "none"){
+        box.style.display == "block";
+        button.textContent = "Ocultar la caja";
     }else{
-        caja.style.display = "none";
-        boton.textContent = "Mostrar caja";
+        box.style.display = "none";
+        button.textContent = "Mostrar caja";
     }
 }
 
-const caja = document.querySelector(".cuadrado");
-const boton = document.querySelector(".ocultar");
+const box = document.querySelector(".cuadrado");
+const button = document.querySelector(".ocultar");
 
 
 button.addEventListener("click", toggleBox);
