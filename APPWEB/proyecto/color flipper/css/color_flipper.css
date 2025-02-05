@@ -1,0 +1,45 @@
+:root{
+    --backgroundColor: white;
+    --widthButton:7rem;
+    --widthImg:25%;
+    --widthImgCarrousel:30%;
+    --fontFamily:"Montserrat", serif;
+}
+
+.encabezado {
+    display: flex;
+    font-size: 1rem;
+    color: aqua;
+    font-family: var(--fontFamily);
+}
+
+
+.encabezado__boton__simple {
+    display: flex;
+    margin-left: 100rem;
+    background-color: var(--backgroundColor);
+    border-color: white;
+    border: 0rem;
+}
+
+.encabezado__boton__hex {
+    display: flex;
+    margin-left: 100rem;
+    background-color: var(--backgroundColor);
+    border-color: white;
+    border: 0rem;
+}
+
+.color__fondo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    font-family: var(--fontFamily);
+    font-size: 2rem;
+}
+
+.click {
+    display: flex;
+    width: 15rem;
+    justify-content: center;
+}
