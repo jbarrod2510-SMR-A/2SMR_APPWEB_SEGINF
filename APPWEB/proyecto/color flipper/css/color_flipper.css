@@ -25,10 +25,12 @@
 
 .encabezado__tit {
     margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .encabezado__botones {
     margin-top: 2rem;
+    margin-right: 2rem;
 }
 
 .encabezado__botones__lista {
@@ -45,5 +47,29 @@
 }
 
 .background {
-    text-align: center;    
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;   
+}
+
+.click {
+    display: flex;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: var(--widthButton);
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
 }
