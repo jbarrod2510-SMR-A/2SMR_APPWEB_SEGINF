@@ -9,6 +9,6 @@ button.addEventListener("click", function () {
 let randomIndex = Math.floor(Math.random() * colors.length);
 let randomColor = colors[randomIndex];
 
-mainSection.style.backgroundColor = randomColor; // Cambiamos el color SOLO del <main>
+mainSection.style.backgroundColor = randomColor; // Cambiamos el color solo del <main>
 backgroundText.innerHTML = `Background color: <span style="color: ${randomColor}; font-weight: bold;">${randomColor.charAt(0).toUpperCase() + randomColor.slice(1)}</span>`;
 });
