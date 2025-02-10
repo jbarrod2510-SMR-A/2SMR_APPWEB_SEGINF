@@ -1,0 +1,20 @@
+.encabezado {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem
+}
+
+.boton {
+    display: flex;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 25rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 47rem;
+}
