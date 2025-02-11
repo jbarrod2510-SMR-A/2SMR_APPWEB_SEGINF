@@ -4,6 +4,10 @@
     font-size: 1.5rem
 }
 
+body{
+    background-color: beige;
+}
+
 .boton {
     display: flex;
     background-color: blue;
@@ -17,4 +21,14 @@
     align-items: center;
     justify-content: center;
     margin-left: 47rem;
+}
+
+.frase-contenedor{
+    display: flex;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
 }
