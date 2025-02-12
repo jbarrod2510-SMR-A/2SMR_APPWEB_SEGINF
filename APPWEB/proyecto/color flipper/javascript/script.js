@@ -10,5 +10,5 @@ button.addEventListener("click", function () {
     const randomColor = colors[randomIndex];
         
     body.style.backgroundColor = randomColor;
-    background.textContent = `Background Color: ${randomColor}`;
+    background.textContent = "Background Color:", + randomColor;
     });

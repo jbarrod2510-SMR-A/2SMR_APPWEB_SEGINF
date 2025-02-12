@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const boton = document.querySelector(".boton");
     const fraseContenedor = document.querySelector(".frase-contenedor");
 
-    boton.addEventListener("click", () => {
+    boton.addEventListener("click", function() {
         const indiceAleatorio = Math.floor(Math.random() * frasesFrikisInformatica.length);
         fraseContenedor.textContent = frasesFrikisInformatica[indiceAleatorio];
     });
