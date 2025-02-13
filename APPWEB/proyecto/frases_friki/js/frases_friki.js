@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Array frases
     frasesFrikisInformatica = [ "Los programadores no tienen errores, solo experiencias inesperadas.", 
         "La programación es como montar en bicicleta: una vez que lo aprendes, nunca lo olvidas.", 
         "En la informática, el único límite es la imaginación (y la memoria RAM).", 
@@ -77,11 +78,11 @@ document.addEventListener("DOMContentLoaded", function() {
         "La programación es como una aventura en un mundo de lógica y algoritmos: los programadores exploran nuevos territorios y descubren soluciones creativas a los desafíos que encuentran en el camino hacia la creación de software de calidad.", "La curiosidad es la fuerza impulsora detrás del aprendizaje en la programación: los programadores curiosos están siempre buscando aprender algo nuevo y emocionante para mejorar sus habilidades y mantenerse al tanto de las últimas tendencias y tecnologías.", 
         "La determinación es la fuerza que impulsa a los programadores a perseverar a través de los desafíos y obstáculos en su camino hacia el éxito en la programación: los buenos programadores no se rinden fácilmente, sino que siguen adelante con determinación hasta alcanzar sus metas." ];
 
-    const boton = document.querySelector(".boton");
-    const fraseContenedor = document.querySelector(".frase-contenedor");
+    const boton = document.querySelector(".boton"); // Selecciona la clase boton
+    const fraseContenedor = document.querySelector(".frase-contenedor"); // Selecciona la clase frase-contenedor
 
-    boton.addEventListener("click", function() {
-        const indiceAleatorio = Math.floor(Math.random() * frasesFrikisInformatica.length);
-        fraseContenedor.textContent = frasesFrikisInformatica[indiceAleatorio];
+    boton.addEventListener("click", function() {  // Genera un evento cuando haga click en el boton
+        const indiceAleatorio = Math.floor(Math.random() * frasesFrikisInformatica.length); // Genera la frase
+        fraseContenedor.textContent = frasesFrikisInformatica[indiceAleatorio]; // Cambia el contenido de frase contenedor por el de indice aleatorio, que tiene la siguiente frase que se mostrará
     });
 });
