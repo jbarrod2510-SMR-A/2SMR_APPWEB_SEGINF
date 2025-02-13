@@ -13,11 +13,8 @@ body {
 .container {
     background-color: #fffbe6;
     padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 90%;
-    max-width: 30rem; /* Máximo tamaño para evitar que crezca demasiado */
+    width: 30rem;
 }
 
 /* Título */
@@ -29,8 +26,8 @@ h1 {
 /* Campo de entrada */
 #taskInput {
     padding: 0.8rem;
-    width: 60%;
-    border: 0.1rem solid #ccc;
+    width: 15rem;
+    border: 0.1rem #ccc;
     border-radius: 0.5rem;
     margin-right: 0.5rem;
     font-size: 1rem;
@@ -42,7 +39,6 @@ h1 {
     color: white;
     border: none;
     padding: 0.8rem 1.2rem;
-    cursor: pointer;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -72,7 +68,6 @@ h1 {
     color: white;
     border: none;
     padding: 0.5rem 0.8rem;
-    cursor: pointer;
     border-radius: 0.5rem;
     font-size: 0.9rem;
 }
